@@ -1,0 +1,21 @@
+# golangci-lint configuration.
+#
+# Deliberately minimal: exactly these six linters, no exclusions and no
+# settings beyond the run timeout. The CI workflow pins golangci-lint
+# "latest", so this file uses the v2 schema (`version: "2"`, verified against
+# the v2 migration guide); `run.timeout` defaults to none in v2 and is set
+# here explicitly to 5m, matching the v1-era expectation.
+version: "2"
+
+run:
+  timeout: 5m
+
+linters:
+  default: none
+  enable:
+    - errcheck
+    - govet
+    - ineffassign
+    - staticcheck
+    - unused
+    - misspell

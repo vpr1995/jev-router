@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "id": "openai/gpt-4o",
+      "context_length": 128000,
+      "pricing": {"prompt": "0.0025", "completion": "0.01"},
+      "architecture": {"input_modalities": ["text", "image"], "output_modalities": ["text"]}
+    },
+    {
+      "id": "anthropic/claude-haiku-4-5",
+      "context_length": 200000,
+      "pricing": {"prompt": "0.0008", "completion": "0.004"},
+      "architecture": {"input_modalities": ["text", "image"], "output_modalities": ["text"]}
+    },
+    {
+      "id": "deepseek/deepseek-r1",
+      "context_length": 64000,
+      "pricing": {"prompt": "0.0005", "completion": "0.0021"},
+      "architecture": {"modality": "text->text"}
+    },
+    {
+      "id": "meta-llama/llama-3.1-8b-instruct",
+      "context_length": 16000,
+      "pricing": {"prompt": "0.00006", "completion": "0.00006"},
+      "architecture": {"modality": "text->text"}
+    }
+  ]
+}

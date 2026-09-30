@@ -1,0 +1,20 @@
+{
+  "provider": "openai",
+  "models": [
+    {
+      "id": "gpt-5.2",
+      "display_id": "openai/gpt-5.2",
+      "context_length": 400000,
+      "supports_vision": true,
+      "price_per_1k_prompt_tokens": 0.00125,
+      "price_per_1k_completion_tokens": 0.01
+    },
+    {
+      "id": "gpt-5.2-mini",
+      "context_length": 128000,
+      "supports_vision": false,
+      "price_per_1k_prompt_tokens": 0.00025,
+      "price_per_1k_completion_tokens": 0.002
+    }
+  ]
+}
